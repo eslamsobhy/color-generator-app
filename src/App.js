@@ -43,6 +43,7 @@ function App() {
             <SingleColor
               key={index}
               {...color}
+              index={index}
               hexColor={color.hex}
             ></SingleColor>
           );
