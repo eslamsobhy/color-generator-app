@@ -39,7 +39,13 @@ function App() {
       <section className="colors">
         {list.map((color, index) => {
           console.log(color);
-          return <SingleColor key={index} {...color}></SingleColor>;
+          return (
+            <SingleColor
+              key={index}
+              {...color}
+              hexColor={color.hex}
+            ></SingleColor>
+          );
         })}
       </section>
     </>
